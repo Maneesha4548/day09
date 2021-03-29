@@ -15,7 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from CSE_Status import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('demo/',views.sample),
+    path('dm/',views.sd),
+    path('hty/<str:ru>/',views.dtye),
+    path('yt/<str:name>/<int:age>/',views.ref),
+    path('wr/<str:name>/<int:age>/<int:sal>/<str:state>/',views.recrd),
 ]
